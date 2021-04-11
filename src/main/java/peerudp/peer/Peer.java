@@ -183,7 +183,6 @@ public class Peer {
             Thread.sleep(1000);
             quit(data, false);
 
-            this.isConnect = false;
         } else if (!data.isBlank() && !containsPeerStatusCode(data, PeerStatus.values())) {
             if (this.hostTarget != this.hostRegisterServer) {
                 send(data);
