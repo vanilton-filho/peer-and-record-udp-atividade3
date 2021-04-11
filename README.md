@@ -17,15 +17,15 @@ Para executar um peer(nó na rede), utilize o seguinte comando:
 java -jar peer-and-record-server-udp-1.0-SNAPSHOT-spring-boot.jar --run-peer 9090
 ```
 
-A porta `9090 será utilizada para
+A porta `9090` será utilizada para
 comunicação na rede entre peers
-e servidores.`
+e servidores.
 
 Para replicar um servidor, utilize
 o seguinte comando:
 
 ```java
-java -jar peer-and-record-server-udp-1.0-SNAPSHOT-spring-boot.jar --run-server --run-replicate 8082 192.168.0.111 8081
+java -jar peer-and-record-server-udp-1.0-SNAPSHOT-spring-boot.jar --run-server --to-replicate 8082 192.168.0.111 8081
 ```
 
 Considerando que `192.168.0.111`
